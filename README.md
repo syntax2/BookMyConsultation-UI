@@ -1,85 +1,62 @@
-# Getting Started with Create React App
+# BookMyConsultation Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![GitHub stars](https://img.shields.io/github/stars/syntax2/bookmyconsultation-frontend?style=social)](https://github.com/syntax2/bookmyconsultation-frontend/stargazers)
 
+> A React‑powered frontend for **BookMyConsultation**—your one‑stop web app to search medical specialists, view availability, book appointments, and rate doctors worldwide.
 
-## Project Setup steps
+## Table of Contents
 
-1. Install Nodejs 10<
-2. Checkout repo
-3. Traverse into code repo and execute `node i` to install packages
-4. To start the application `npm start`
- 
-## Available Scripts
+- [Features](#features)  
+- [Architecture Overview](#architecture-overview)  
+- [Prerequisites](#prerequisites)  
+- [Getting Started](#getting-started)  
+  - [Clone the Repo](#clone-the-repo)  
+  - [Install Dependencies](#install-dependencies)  
+  - [Run in Development](#run-in-development)  
+  - [Build for Production](#build-for-production)  
+  - [Running Tests](#running-tests)  
+- [Available Scripts](#available-scripts)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 🔍 **Doctor Search** by specialty, name, or location  
+- 📅 **Real‑time Time Slots** filtered by existing bookings  
+- ✅ **Appointment Booking** with confirmation UI  
+- ⭐ **Rating & Reviews** for consulted doctors  
+- 👤 **User Authentication** (Sign up / Sign in)  
+- 🔒 **Secure Token‑based Sessions**  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+---
 
 ## Architecture Overview
 
-The screenshots of the working model can be found in the SS BookMyConsultation folder.
+The **BookMyConsultation** frontend is built with:
 
+- **Create React App** – zero‑config bootstrapping  
+- **React Router** – client‑side routing  
+- **Axios** – HTTP client for REST API calls  
+- **Context API** (or Redux) – application‑wide state  
+- **CSS Modules** (or styled‑components / SCSS) – scoped styling  
 
+Screenshots of the working UI can be found in the `./screenshots/` folder.
+
+---
+
+## Prerequisites
+
+- **Node.js** v10 or higher  
+- **npm** v6 or higher (bundled with Node.js)  
+
+---
+
+## Getting Started
+
+### Clone the Repo
+
+```bash
+git clone https://github.com/syntax2/bookmyconsultation-frontend.git
+cd bookmyconsultation-frontend
